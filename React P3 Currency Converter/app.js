@@ -31,6 +31,7 @@ function App() {
     }
   };
 
+  //function 新增貨幣種類
   const addnewcurrency = () => {
     if (newcurrency !== "" && newrate > 0) {
       const newone = { name: newcurrency, rate: newrate };
@@ -40,6 +41,8 @@ function App() {
       return;
     }
   };
+
+  //function 兌換結果紀錄
   const convert = (currency, currencyValue) => {
     if (wallet - TWD < 0 || TWD == "") {
       alert("錢呢?");
