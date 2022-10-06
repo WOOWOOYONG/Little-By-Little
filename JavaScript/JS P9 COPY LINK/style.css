@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(208, 209, 199);
+}
+
+.copy-link {
+    --height: 36px;
+    display: flex;
+    margin: 2rem auto;
+    max-width: 250px;
+  }
+
+  .copy-link-input {
+    flex-grow: 1;
+    padding: 0 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-right: none;
+    outline: none;
+  }
+
+  .copy-link-input:hover {
+    background-color: #eee;
+  }
+
+  .copy-link-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: #ddd;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .copy-link-button:hover {
+    background-color: #ccc;
+  }
