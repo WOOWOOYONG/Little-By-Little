@@ -1,0 +1,88 @@
+body {
+    margin: 0 ;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: auto;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.main > div {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.side-panel-toggle {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background-color: #4b7e9c;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.side-panel-toggle:hover {
+    background-color: #304e60;
+}
+
+.sp-icon-close {
+    display: none !important; 
+}
+
+.side-panel {
+    display: none;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 20px;
+    color: #fff;
+    background-color: #4b7e9c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.side-panel-open .side-panel {
+    display: initial;
+}
+
+.side-panel-open .sp-icon-open {
+    display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+    display: initial !important;
+}
+
+.side-panel ul {
+    list-style-type: none;
+}
+
+.side-panel li {
+    margin: 1rem 0;
+}
+
+.side-panel ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.side-panel ul a:hover {
+    color: black;
+    transition: all 0.2s;
+}
