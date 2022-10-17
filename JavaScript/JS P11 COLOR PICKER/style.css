@@ -1,0 +1,57 @@
+body{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.colorPicker {
+    background: none;
+    border: none;
+    margin: 0;
+    
+}
+
+.colorPicker .oned {
+    margin-right: 0;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    font-size: 1.2rem ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.config {
+    flex-grow: 1;
+    margin-left: 20px ;
+}
+
+.config-title {
+    text-align: center;
+    padding: 15px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.selected-color-text {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.selected-color,.saved-color {
+    height: 15px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.saved-color:not(:last-of-type) {
+    margin-bottom: 5px;
+}
