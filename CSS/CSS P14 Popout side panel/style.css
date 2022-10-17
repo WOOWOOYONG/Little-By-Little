@@ -7,20 +7,23 @@ body {
 .wrapper{
     display: flex;
     height: 100vh;
+    margin: 0 auto;
 }
 
 .main {
     flex-grow: 1;
     padding: 20px;
     overflow: auto;
-    margin: 0 25%;
     text-align: center;
+    flex-direction: column;
+
 }
 
-.main > div {
+.main .intro {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
+    margin: 0 25%;
 }
 
 .side-panel-toggle {
