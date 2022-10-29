@@ -13,6 +13,8 @@ body{
         #efc4c8,
         #f49290
     )0 100% no-repeat;
+    max-width: 100%;
+    margin: 0 auto;
 
 }
 
