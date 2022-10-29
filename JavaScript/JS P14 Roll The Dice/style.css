@@ -13,8 +13,6 @@ body{
         #efc4c8,
         #f49290
     )0 100% no-repeat;
-    max-width: 100%;
-    margin: 0 auto;
 
 }
 
@@ -71,5 +69,15 @@ button{
     }
     100%{
         transform: rotate(8deg);
+    }
+}
+
+@media(max-width: 390px){
+    .container {
+        max-width: 100%;
+
+    }
+    .rolling-img{
+       max-width: 100%;
     }
 }
