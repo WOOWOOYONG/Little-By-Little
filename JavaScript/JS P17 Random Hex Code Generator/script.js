@@ -5,6 +5,7 @@ const copyBtn = document.getElementById("copy-btn");
 const customAlert = document.querySelector(".custom-alert");
 let hexString = "0123456789abcdef";
 
+//產生隨機Hex色號
 const genHexCode = () => {
   let hexCode = "#";
   for (i = 0; i < 6; i++) {
@@ -18,6 +19,7 @@ const genHexCode = () => {
   outputColor.style.backgroundColor = hexCode;
 };
 
+//複製色號
 copyBtn.addEventListener("click", () => {
   const result = output.value;
   navigator.clipboard.writeText(result);
