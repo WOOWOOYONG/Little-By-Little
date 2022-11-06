@@ -46,7 +46,7 @@ const popChart = new Chart(myChart, {
         display: true,
         text: "台灣主要城市人口數量",
         font: {
-          size: 40,
+          size: 30,
         },
         padding: {
           bottom: 50,

@@ -11,3 +11,7 @@ body {
     margin: 5rem auto;
     background-color: rgb(253, 253, 253);
 }
+
+p {
+    color: rgb(207, 183, 156);
+}
