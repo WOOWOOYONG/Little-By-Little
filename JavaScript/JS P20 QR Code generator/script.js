@@ -34,6 +34,7 @@ const generateQRCode = (url, size) => {
   });
 };
 
+//Spinner control
 const showSpinner = () => {
   document.getElementById("spinner").style.display = "block";
 };
@@ -42,6 +43,7 @@ const hideSpinner = () => {
   document.getElementById("spinner").style.display = "none";
 };
 
+//只能產生一張圖片與按鈕
 const clearUI = () => {
   qr.innerHTML = "";
   const saveLink = document.getElementById("save-link");
