@@ -95,3 +95,8 @@ input {
     background-color: red;
     color: #fff;
 }
+
+
+.checked {
+    text-decoration: line-through;
+}

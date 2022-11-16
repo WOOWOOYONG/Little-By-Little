@@ -29,12 +29,15 @@ addTask.addEventListener("click", function () {
   inputTask.value = "";
 
   checkButton.addEventListener("click", function () {
-    checkButton.parentElement.style.textDecoration = "line-through";
+    task.classList.toggle("checked");
+  });
+  deleteButton.addEventListener("click", function () {
+    task.remove();
   });
 
-  deleteButton.addEventListener("click", function (e) {
-    let target = e.target;
-    console.log(target.parentElement.parentElement);
-    target.parentElement.parentElement.remove();
-  });
+  // deleteButton.addEventListener("click", function (e) {
+  //   console.log(deleteButton);
+  //   console.log(e.target.parentElement);
+  //   e.target.parentElement.remove();
+  // });
 });
