@@ -3,6 +3,7 @@ import Home from "./Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
+import Edit from "./Edit";
 import NotFound from "./NotFound";
 
 function App() {
@@ -18,8 +19,11 @@ function App() {
             <Route path="/create">
               <Create />
             </Route>
-            <Route path="/blogs/:id">
+            <Route exact path="/blogs/:id">
               <BlogDetails />
+            </Route>
+            <Route path="/blogs/:id/edit">
+              <Edit />
             </Route>
             <Route path="*">
               <NotFound />

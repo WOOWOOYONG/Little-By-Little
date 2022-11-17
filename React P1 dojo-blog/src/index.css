@@ -15,7 +15,8 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #d6a255;
+  font-size: 1.6rem;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +27,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #e1ad4b;
 }
 .content {
   max-width: 600px;
@@ -44,9 +45,10 @@
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #e1ad4b;
   margin-bottom: 8px;
 }
 
@@ -56,22 +58,39 @@
 
 /* blog details page */
 .blog-details h2 {
-  font-size: 20px;
-  color: #f1356d;
+  font-size: 1.6rem;
+  color: #e1ad4b;
   margin-bottom: 10px;
 }
 
 .blog-details div {
-  margin: 20px 0;
+  margin: 2rem 0;
+  font-size: 1.2rem;
 }
 
 .blog-details button{
-  background: #f1356d;
+  background: #cb554a;
   color: #fff;
   border: 0;
   border-radius: 8px;
   cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
 }
+
+.blog-details button:hover {
+  background-color: rgb(220, 52, 40);
+}
+
+.blog-details .edit-link {
+  background-color: rgb(231, 167, 50);
+  margin-right: 1rem;
+}
+
+.blog-details .edit-link:hover {
+  background-color: #d28c0a;
+}
+
 
 
 
@@ -87,7 +106,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #eca130;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -99,10 +118,56 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #eaa82e;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.create button:hover {
+  background: #bb8b32;
+
+}
+
+/* edit blog detail page*/
+
+.blog-details-edit input {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 300px;
+}
+
+
+.blog-details-edit textarea {
+  display: block;
+  border: 2px solid #c7c5c5;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 300px;
+  margin:1rem 0
+}
+
+
+.blog-details-edit textarea:focus {
+  border: 2px solid rgb(71, 69, 69);
+}
+
+.blog-details-edit .update-btn {
+  background-color: #1e9a3f;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  
+}
+
+.blog-details-edit .update-btn:hover {
+  background-color: #2aaa57;
 }

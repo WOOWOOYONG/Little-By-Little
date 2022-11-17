@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// destructuring props from Home component
 const BlogList = ({ blogs, title }) => {
   //   const blogs = props.blogs;
   //   const title = props.title;
