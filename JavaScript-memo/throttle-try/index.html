@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throttle</title>
+  </head>
+  <body>
+    <div class="result">
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+      <p>testing</p>
+    </div>
+  </body>
+  <script>
+    const result = document.querySelector('.result');
+
+    //每隔1秒執行callback的內容
+    function throttle(callback, time = 1000) {
+      let timer;
+      return function () {
+        //如果已經在執行中，不做任何事
+        //直到timer被清除後，重新執行
+        if (timer) {
+          return;
+        }
+        timer = setTimeout(() => {
+          callback();
+          timer = null;
+        }, time);
+      };
+    }
+
+    //Infinite Scroll
+    function scroll() {
+      let clientHeight =
+        document.documentElement.clientHeight || document.body.clientHeight;
+      let scrollTop = document.documentElement.scrollTop;
+      let scrollHeight = document.documentElement.scrollHeight;
+      console.log(scrollTop + clientHeight, scrollHeight);
+      //當滾動到頁面底部時...
+      //   if (scrollTop + clientHeight + 10 >= scrollHeight) {
+      //當滾動到頁面90%時...
+      if ((scrollTop + clientHeight) / scrollHeight >= 0.9) {
+        console.log('bottom...');
+
+        for (let i = 0; i <= 10; i++) {
+          let p = document.createElement('p');
+          p.textContent = 'testing2...';
+          result.appendChild(p);
+        }
+      }
+    }
+
+    document.addEventListener('scroll', throttle(scroll));
+  </script>
+</html>
